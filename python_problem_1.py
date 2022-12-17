@@ -53,10 +53,6 @@ def execute_main():
     output_file = fw.FileWriter("PyProblem1-Output.txt")
     output_file._file_write_all_str(answer)
     
-    #for i in range(201,211,1):
-      #  print(f"input {i}:")
-       # xxx = exe_problem1.find_cycle(i)
-       # print(xxx)
 
 if __name__ == "__main__":
     execute_main()
