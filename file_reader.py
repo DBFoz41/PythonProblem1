@@ -14,7 +14,6 @@ class FileReader:
         
     def file_as_int_list(self):
         self._file_read_all_str_list()
-        #self.str_list_len = len(self.str_list)
         int_list = []
         for str_num in self.str_list:
             str_split = str_num.split(" ")
@@ -38,16 +37,4 @@ class FileReader:
 
 
 file_example = FileReader("Problem1-6-1Input.txt")
-#file_example.file_read_all_str_list()
 lenght = file_example.file_as_int_line_list()
-
-#for i in range(0, len(lenght), 1):
-  #  print(lenght[i][0])
-##print(lenght)
-#print(lenght[0][1])
-
-
-
-
-#num_as_str = "1"
-#num_convert = int(num_as_str)

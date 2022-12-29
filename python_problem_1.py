@@ -42,15 +42,14 @@ class Problem1:
                 self.cycle_iter = self.find_cycle(j)
                 if self.cycle_iter > self.longest_cycle:
                     self.longest_cycle = self.cycle_iter
-            print(self.longest_cycle)
             return_string += str(problem_set[i][0]) + " " + str(problem_set[i][1]) + " " + str(self.longest_cycle) + "\n"
-        print(return_string)
         return return_string
 
 def execute_main():
     exe_problem1 = Problem1()
     answer = exe_problem1.solve()
     output_file = fw.FileWriter("PyProblem1-Output.txt")
+    print(answer)
     output_file._file_write_all_str(answer)
     
 
